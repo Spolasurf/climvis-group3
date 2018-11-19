@@ -55,7 +55,7 @@ def test_get_url():
                                                     na=False)].iloc[0]
 
     url = core.get_googlemap_url(dfi.Lon, dfi.Lat)
-    assert 'maps.googleapis.com' in url
+    assert 'maps.google' in url
 
 
 def test_write_html(tmpdir):

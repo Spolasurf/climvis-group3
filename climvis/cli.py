@@ -26,19 +26,13 @@ def cruvis_io(args):
 
     if len(args) == 0:
         print(HELP)
-        return
-
-    if args[0] in ['-h', '--help']:
+    elif args[0] in ['-h', '--help']:
         print(HELP)
-        return
-
-    if args[0] in ['-v', '--version']:
+    elif args[0] in ['-v', '--version']:
         print('cruvis: ' + climvis.__version__)
         print('License: public domain')
         print('cruvis is provided "as is", without warranty of any kind')
-        return
-
-    if args[0] in ['-l', '--loc']:
+    elif args[0] in ['-l', '--loc']:
         if len(args) < 3:
             print('cruvis --loc needs lon and lat parameters!')
             return
@@ -48,7 +42,9 @@ def cruvis_io(args):
             print('File successfully generated at: ' + html_path)
         else:
             webbrowser.get().open_new_tab(html_path)
-        return
+    else:
+        print('cruvis: command not understood. '
+              'Type "cruvis --help" for usage options.')
 
 
 def cruvis():
