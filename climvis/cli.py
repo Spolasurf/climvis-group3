@@ -41,7 +41,7 @@ def cruvis_io(args):
         if '--no-browser' in args:
             print('File successfully generated at: ' + html_path)
         else:
-            webbrowser.get().open_new_tab(html_path)
+            webbrowser.get().open_new_tab('file://' + html_path)
     else:
         print('cruvis: command not understood. '
               'Type "cruvis --help" for usage options.')
