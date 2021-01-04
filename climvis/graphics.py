@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-
+from scipy.interpolate import interp1d
 
 def plot_annual_cycle(df, filepath=None):
 

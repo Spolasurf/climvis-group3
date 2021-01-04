@@ -4,4 +4,7 @@
 __version__ = '0.0.1'
 
 from climvis.core import write_html
+from climvis.core import write_point_html
+from climvis.core import write_track_html
 from climvis.core import haversine
+#from climvis.snowheight import tour

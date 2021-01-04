@@ -1,6 +1,8 @@
-"""This configuration module is a container for parameters and constants."""
+"""This configuration module is a container for parameters and constants.
+
+@author: Sebastian Dobesberger"""
+
 import os
-import sys
 from pathlib import Path
 
 path = "{}/.climvis".format(str(Path.home()))
@@ -32,13 +34,17 @@ filespath = [cru_tmp_file,cru_pre_file,cru_topo_file]
 # Check if all files are availabe in the given paths. If not stop script
 for i in filespath:
     if Path(i).is_file() is False:
-        print("The CRU files are not available on this system. For cruvis (part of the climvis package) to work properly, please create a file called '.climvis' in your HOME directory, and indicate the path to the CRU directory in it.")
-        print("***Stop script***")
-        sys.exit()
+        raise Exception("The CRU files are not available on this system. For cruvis (part of the climvis package) to work properly, please create a file called '.climvis' in your HOME directory, and indicate the path to the CRU directory in it.")
 
 # Make path to website template and "world cities coordinates file"
 bdir = os.path.dirname(__file__)
 html_tpl = os.path.join(bdir, 'data', 'template.html')
-world_cities = os.path.join(bdir, 'data', 'world_cities.csv')
+html_tpl_track = os.path.join(bdir, 'data', 'template_track.html')
+html_tpl_point = os.path.join(bdir, 'data', 'template_point.html')
+world_cities = os.path.join(bdir, 'data', 'allCountries.txt')
+
+# Test directories
+gpx_test_track = os.path.join(bdir, 'data', 'tt.gpx')
 
 default_zoom = 8
+default_zoom_track = 13
