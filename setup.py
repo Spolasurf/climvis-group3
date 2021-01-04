@@ -53,6 +53,8 @@ req_packages = ['numpy',
                 'xarray',
                 'matplotlib',
                 'netCDF4',
+                'gpxpy',
+                'geopy',
                 ]
 
 check_dependencies(req_packages)
@@ -184,7 +186,8 @@ setup(
     # If there are data files included in your packages that need to be
     # installed, specify them here.
     package_data={'climvis': ['data/template.html',
-                              'data/world_cities.csv'
+                              #'data/world_cities.csv'
+                              'data/allcountries.txt'
                               ]
                   },
 
@@ -204,6 +207,7 @@ setup(
     entry_points={  # Optional
         'console_scripts': [
             'cruvis=climvis.cli:cruvis',
+            'snowheight=climvis.cli:snowheight',
         ],
     },
 
