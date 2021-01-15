@@ -55,18 +55,21 @@ From the package root directory.
 
 ## Authors
 
+Make sure you have all dependencies installed. These are:
+- numpy
+
 Fabien Maussion:
-    - original climvis package with ``cruvis`` command
+- original climvis package with ``cruvis`` command
 
 Laurin Steinmaier:
-	- Skitour.py (class Data_Handler edited by Sebastian)
-	- test_Skitour.py
+- Skitour.py (class Data_Handler edited by Sebastian)
+- test_Skitour.py
 
 Rebecca Chizzola:
-	- gpx_reader.py
-	- test_gpx_reader.py
-	- core.py: snowheight -g, GPXHandler, get_googlemap_track_url, write_track_html
-	- test_core.py: test_GPXHandler, test_get_google_track_url, test_write_track_html
+- gpx_reader.py
+- test_gpx_reader.py
+- core.py: snowheight -g, GPXHandler, get_googlemap_track_url, write_track_html
+- test_core.py: test_GPXHandler, test_get_google_track_url, test_write_track_html
 
 Sebastian Dobesberger:
 	- Guided exercises
