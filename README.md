@@ -55,9 +55,6 @@ From the package root directory.
 
 ## Authors
 
-Make sure you have all dependencies installed. These are:
-- numpy
-
 Fabien Maussion:
 - original climvis package with ``cruvis`` command
 
@@ -72,13 +69,13 @@ Rebecca Chizzola:
 - test_core.py: test_GPXHandler, test_get_google_track_url, test_write_track_html
 
 Sebastian Dobesberger:
-	- Guided exercises
-	- Putting All files into the climvis package and make it one working package
-	- Pep8 edit: about 200 lines in All files
-	- cli.py Adding every other snowheight commands (all other than snowheight -g)
-	- test_cli.py
-	- core.py: write_html (guided exercise), write_point_html
-	- test_core.py: test_write_point_html, test_error_write_point_html
+- Guided exercises
+- Putting All files into the climvis package and make it one working package
+- Pep8 edit: about 200 lines in All files
+- cli.py Adding every other snowheight commands (all other than snowheight -g)
+- test_cli.py
+- core.py: write_html (guided exercise), write_point_html
+- test_core.py: test_write_point_html, test_error_write_point_html
 
 ## License
 
