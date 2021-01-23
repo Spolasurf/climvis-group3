@@ -44,6 +44,10 @@ or
 
 To see what it can do for you.
 
+## Data and Calculations
+
+The data used is ERA-5 data from the 2010-2020 time period for precipitation and 0°C level. The terrain data is SRTM. The snowheight is simply calculated with the precipitation and 0°C level. The probability for a Skitour is being calculated with the assumption of at least 30 cm of snow needed.
+
 ## Testing
 
 I recommend to use [pytest](https://docs.pytest.org) for testing. To test
